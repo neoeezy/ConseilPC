@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden; /* Évite le défilement horizontal */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #FFFFFF;
+    padding-top: 70px; /* Ajustement pour le header fixe */
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Header Fixe */
+.header {
+    background-color: #F3F3F3;
+    padding: 1em 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .logo {
+    font-size: 24px;
+    color: #700005;
+}
+
+/* Navigation */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 0.9em;
+}
+
+.login-btn {
+    background-color: #700005;
+    color: #fff;
+    padding: 0.5em;
+    border-radius: 5px;
+}
+
+/* Menu Burger */
+.burger {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.burger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #700005;
+    transition: all 0.3s ease;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 10px;
+        background-color: #F3F3F3;
+        width: 200px;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .burger {
+        display: flex;
+    }
+
+    .nav-links.nav-active {
+        display: flex;
+    }
+
+    .nav-links li {
+        padding: 1em;
+        text-align: center;
+    }
+}
+
+/* Hero Banner */
+.hero-banner {
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 2em 0;
+    width: 100%;
+}
+
+.hero-banner .banner-image {
+    width: 100%;
+    height: auto;
+}
+
+.hero-banner .shop-now-btn {
+    background-color: #700005;
+    color: #fff;
+    padding: 1em;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-size: 1em;
+}
+
+/* Assure que le contenu prend toute la hauteur disponible */
+main {
+    flex: 1;
+}
+
+/* Footer */
+.footer {
+    background-color: #F3F3F3;
+    padding: 2em 0;
+    text-align: center;
+    margin-top: auto; /* S'assure que le footer est bien en bas */
+}
+
+.footer nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+    font-size: 0.9em;
+}
+
+.footer p {
+    margin-top: 1em;
+    color: #700005;
+}
+
+.pc-build ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.pc-build li {
+    margin: 20px 0;
+}
+
+.pc-build a {
+    text-decoration: none;
+    color: #700005;
+    font-weight: bold;
+}
+
+.pc-build a:hover {
+    color: #ff6600;
+}
+
+.pc-build img {
+    width: 20%; /* Réduit la largeur de l'image à 50% de son conteneur */
+    max-width: 100%; /* Assure qu'elle ne dépasse pas la taille du conteneur */
+    height: auto;   /* Conserve la proportion */
+}
+
+
+
