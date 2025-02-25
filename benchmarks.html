@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Setup PC - ConseilPC</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <style>
+        /* Styles pour une meilleure disposition des vidéos */
+        .video-section {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center;
+            padding: 30px;
+            background-color: #f4f4f9;
+        }
+        .video-card {
+            width: 100%;
+            max-width: 800px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+            border-radius: 15px;
+            overflow: hidden;
+            background: #fff;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        .video-card:hover {
+            transform: scale(1.03);
+        }
+        .video-card h2 {
+            font-size: 1.8em;
+            color: #333;
+            margin: 15px 0;
+            padding: 0 20px;
+            font-weight: bold;
+        }
+        .video-card h2 span {
+            color: #e74c3c; /* Rouge personnalisé pour s'accorder à ton site */
+        }
+        .video-card iframe {
+            width: 100%;
+            height: 450px;
+            border: none;
+        }
+        .benchmark-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 30px;
+    background-color: #fff;
+    margin: 40px auto;
+    max-width: 1200px;
+}
+.benchmark-card {
+    flex: 1;
+    min-width: 300px;
+    max-width: 500px;
+    background-color: #fff;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+.benchmark-card:hover {
+    transform: scale(1.02);
+}
+.benchmark-card h2 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+.benchmark-card a {
+    color: #e74c3c;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+.benchmark-card a:hover {
+    text-decoration: underline;
+}
+
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo-link">
+                <h1 class="logo">Conseil PC</h1>
+            </a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="./contact.html" class="contact-btn">Contact</a></li>
+                </ul>
+                <div class="burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Rubriques sous le Header -->
+    <section class="sections">
+        <div class="section">
+            <a href="setup-pc.html">
+                <h2>Setup PC complet</h2>
+            </a>
+        </div>
+        <div class="section">
+            <a href="ecran-gaming.html">
+                <h2>Écran Gaming</h2>
+            </a>
+        </div>
+        <div class="section">
+            <a href="accessoires.html">
+                <h2>Accessoires</h2>
+            </a>
+        </div>
+        <div class="section">
+            <a href="bonplans.html">
+                <h2>Bons plans du mois</h2>
+            </a>
+        </div>
+        <div class="section">
+            <a href="tourpc.html">
+                <h2>Tour PC à monter</h2>
+            </a>
+        </div>
+        <div class="section">
+            <a href="benchmarks.html">
+                <h2>Tuto/Benchmarks</h2>
+            </a>
+        </div>
+    </section>
+
+    <!-- Intégration des vidéos YouTube avec titres et meilleure disposition -->
+    <section class="video-section">
+        <div class="video-card">
+            <h2>Comment <span>MONTER</span> son PC GAMER en 2025</h2>
+            <iframe src="https://www.youtube.com/embed/50hJ3W447_E?start=2274" 
+            title="Comment MONTER son PC GAMER en 2025" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen></iframe>
+        </div>
+
+        <div class="video-card">
+            <h2><span>OPTIMISER</span> WINDOWS 11</h2>
+            <iframe src="https://www.youtube.com/embed/T_Pah_u0CC0" 
+            title="OPTIMISER WINDOWS 11" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen></iframe>
+        </div>
+
+        <div class="video-card">
+            <h2>Différence écrans <span>60hz 144hz 240hz 360hz</span></h2>
+            <iframe src="https://www.youtube.com/embed/WwgZztW3M_U" 
+            title="Différence écrans 60hz 144hz 240hz 360hz" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen></iframe>
+        </div>
+
+        <div class="video-card">
+            <h2><span>INSTALLER & ACTIVER</span> Windows 10 / 11 (Clé USB)</h2>
+            <iframe src="https://www.youtube.com/embed/6sr3pP852bc" 
+            title="INSTALLER & ACTIVER Windows 10 / 11 sur son PC (Clé USB)" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen></iframe>
+        </div>
+    </section>
+
+<!-- Section Benchmark et Test de Connexion -->
+<section class="benchmark-section">
+    <div class="benchmark-card">
+        <h2>Tester toutes les pièces de son PC et ses performances</h2>
+        <p><a href="https://www.userbenchmark.com/Software" target="_blank">Découvrir UserBenchmark</a></p>
+    </div>
+    <div class="benchmark-card">
+        <h2>Tester ma connexion internet <br> (Débit Fibre Adsl / PING)</h2>
+        <p><a href="https://www.speedtest.net/fr" target="_blank">Faire un Speedtest</a></p>
+    </div>
+</section>
+
+
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Talbi Adil - Tous droits réservés.</p>
+        </div>
+    </footer>
+</body>
+</html>
+

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ConseilPC - Accueil</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <!-- Header -->
+ <header class="header">
+    <div class="container">
+        <a href="index.html" class="logo-link"> <!-- Ajout du lien ici -->
+            <h1 class="logo">Conseil PC</h1>  <!-- Le texte "Conseil PC" reste inchangé -->
+        </a>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="./contact.html" class="contact-btn">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </div>
+</header>
+
+    
+    
+
+<!-- Rubriques sous le Header -->
+<section class="sections">
+    <div class="section">
+        <a href="setup-pc.html">
+            <h2>Setup PC complet</h2>
+        </a>
+    </div>
+    <div class="section">
+        <a href="ecran-gaming.html">
+            <h2>Écran Gaming</h2>
+        </a>
+    </div>
+    <div class="section">
+        <a href="accessoires.html">
+            <h2>Accessoires</h2>
+        </a>
+    </div>
+    <div class="section">
+        <a href="bonplans.html">
+            <h2>Bons plans du mois</h2>
+        </a>
+    </div>
+    <div class="section">
+        <a href="tourpc.html">
+            <h2>Tour PC à monter </h2>
+        </a>
+    </div>
+    <div class="section">
+        <a href="benchmarks.html">
+            <h2>Tuto/Benchmarks</h2>
+        </a>
+    </div>
+</section>
+
+
+    <!-- Bannière principale -->
+    <section class="hero-banner">
+        <div class="banner-content">
+            <h2>Bienvenue chez Conseil PC</h2>
+            <p>Découvrez nos collections de PC d'exception.</p>
+        </div>
+    </section>
+
+    <!-- Liste de configuration PC -->
+    <section class="pc-build">
+        <h2>Nos PC à monter<br>Prix affiché au 1er mars 2025</h2>
+        <div class="pc-images">
+            <div class="pc-image">
+                <a href="https://www.amazon.fr/hz/wishlist/ls/10GBLT62IBVTR?tag=neoeezy-21&ref_=wl_share" target="_blank">
+                    <img src="./img/pc.jpg" alt="Liste des pièces PC" class="zoom-image"/>
+                </a>
+                <h3>PC 1080p à 650€</h3>
+                <p class="description">
+                    > Processeur : Intel i5 12400f<br>
+                    > 32go de ram / Ssd 500go<br>
+                    > Carte graphique : Amd Radeon RX 6650 XT<br>
+                    ⚠️ Total des pièces sans le montage et la livraison 
+                </p>
+                <a href="https://www.amazon.fr/hz/wishlist/ls/10GBLT62IBVTR?tag=neoeezy-21&ref_=wl_share" class="buy-btn" target="_blank">Acheter sur Amazon</a>
+            </div>
+            <div class="pc-image">
+                <a href="https://www.amazon.fr/hz/wishlist/ls/2M6VD76XGVGJX?tag=neoeezy-21&ref_=wl_share" target="_blank">
+                    <img src="./img/pc2.jpg" alt="Autre PC sur Amazon" class="zoom-image"/>
+                </a>
+                <h3>PC 2K à 1000€</h3>
+                <p class="description">
+                    > Processeur : Intel i5 14600k<br>
+                    > 32go de Ram / Ssd 1To<br>
+                    > Carte graphique : Amd Radeon RX 7700XT<br>
+                    ⚠️ Total des pièces sans le montage et la livraison 
+                </p>
+                <a href="https://www.amazon.fr/hz/wishlist/ls/2M6VD76XGVGJX?tag=neoeezy-21&ref_=wl_share" class="buy-btn" target="_blank">Acheter sur Amazon</a>
+            </div>
+            <div class="pc-image">
+                <a href="https://www.amazon.fr/hz/wishlist/ls/31WP5EGMIEUOT?tag=neoeezy-21&ref_=wl_share" target="_blank">
+                    <img src="./img/pc3.avif" alt="Nouveau PC" class="zoom-image"/>
+                </a>
+                <h3>PC 4K à 2000€</h3>
+                <p class="description">
+                    > Processeur : Intel i9 14900kf <br>
+                    > 64go DDR5 / Ssd 2To <br>
+                    > Carte graphique : Amd Radeon RX 7900 XT <br>
+                    ⚠️ Total des pièces sans le montage et la livraison 
+                </p>
+                <a href="https://www.amazon.fr/hz/wishlist/ls/31WP5EGMIEUOT?tag=neoeezy-21&ref_=wl_share" class="buy-btn" target="_blank">Acheter sur Amazon</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Talbi Adil - Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelectorAll('.zoom-image').forEach(img => {
+            img.addEventListener('mouseover', () => {
+                img.style.transform = 'scale(1.1)';
+                img.style.transition = 'transform 0.3s ease';
+            });
+            img.addEventListener('mouseout', () => {
+                img.style.transform = 'scale(1)';
+            });
+        });
+    </script>
+</body>
+</html>

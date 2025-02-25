@@ -9,14 +9,14 @@ html, body {
     margin: 0;
     display: flex;
     flex-direction: column;
-    overflow-x: hidden; /* Évite le défilement horizontal */
+    overflow-x: hidden;
 }
 
 body {
     font-family: Arial, sans-serif;
     color: #333;
     background-color: #FFFFFF;
-    padding-top: 70px; /* Ajustement pour le header fixe */
+    padding-top: 70px;
 }
 
 .container {
@@ -135,55 +135,266 @@ body {
     font-size: 1em;
 }
 
-/* Assure que le contenu prend toute la hauteur disponible */
-main {
-    flex: 1;
+/* Liste de configuration PC */
+.pc-build h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 1.2em; /* Taille réduite */
+    animation: flashAnimation 5s infinite;
+}
+
+@keyframes flashAnimation {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.pc-images {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.pc-image {
+    width: 48%;
+    text-align: center;
+}
+
+.pc-image img {
+    width: 25%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+}
+
+h3 {
+    color: black;
+    font-size: 1.1em; /* Taille réduite */
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.description {
+    font-size: 1em;
+    color: #700005;
+    font-weight: 600;
+    text-align: center;
+    line-height: 1.5;
+    margin-top: 10px;
+}
+
+.red-text {
+    color: red;
+    font-weight: normal;
+}
+
+.buy-btn {
+    display: inline-block;
+    background-color: #700005;
+    color: #fff;
+    padding: 0.8em 1.5em;
+    margin-top: 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+}
+
+.buy-btn:hover {
+    background-color: #b30000;
+}
+
+/* Image cliquable wishlist */
+.wishlist-container {
+    position: absolute;
+    top: 100px;
+    right: 20px;
+}
+
+.wishlist-container img {
+    width: 100px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.wishlist-container img:hover {
+    transform: scale(1.1);
 }
 
 /* Footer */
 .footer {
     background-color: #F3F3F3;
-    padding: 2em 0;
+    padding: 1em 0; /* Reste avec padding réduit */
     text-align: center;
-    margin-top: auto; /* S'assure que le footer est bien en bas */
-}
-
-.footer nav a {
-    margin: 0 10px;
-    text-decoration: none;
-    color: #333;
-    font-size: 0.9em;
+    margin-top: auto;
 }
 
 .footer p {
     margin-top: 1em;
     color: #700005;
+    font-size: 1em; /* Remet la taille de la police comme avant */
 }
 
-.pc-build ul {
-    list-style-type: none;
-    padding: 0;
+/* Résoudre le problème de défilement */
+html, body {
+    overflow-x: hidden; /* Evite le défilement latéral */
 }
 
-.pc-build li {
-    margin: 20px 0;
-}
-
-.pc-build a {
+/* Nouveau bouton Contact */
+.contact-btn {
+    background-color: #700005;
+    color: #ffffff;
+        padding: 0.7em 1.5em;
+    border-radius: 5px;
     text-decoration: none;
-    color: #700005;
+    font-size: 1.1em;
+    transition: background-color 0.3s;
+}
+
+.contact-btn:hover {
+    background-color: #b30000;
+}
+
+/* Formulaire de contact */
+.contact-section form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-section label {
     font-weight: bold;
+    margin-top: 10px;
+    display: block;
 }
 
-.pc-build a:hover {
-    color: #ff6600;
+.contact-section input, .contact-section textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
-.pc-build img {
-    width: 20%; /* Réduit la largeur de l'image à 50% de son conteneur */
-    max-width: 100%; /* Assure qu'elle ne dépasse pas la taille du conteneur */
-    height: auto;   /* Conserve la proportion */
+.contact-section button {
+    background-color: #700005;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    margin-top: 15px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.contact-section button:hover {
+    background-color: #b30000;
+}
+
+/* Nouveau bouton de connexion */
+.login-btn {
+    background-color: #700005;
+    color: #fff;
+    padding: 0.7em 1.5em;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: background-color 0.3s;
+}
+
+.login-btn:hover {
+    background-color: #b30000;
+}
+
+/* Ajustements pour les sections sous le header */
+/* Ajustements pour coller encore plus les rubriques au header */
+.sections {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    padding-top: 0;
+    margin-top: -10px; /* Rapproche encore plus les rubriques du header */
+}
+
+.section {
+    background-color: #f4f4f4;
+    padding: 8px;
+    margin: 0;
+    width: auto;
+    flex-grow: 1;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    font-size: 1.1em; /* Taille maintenue pour la visibilité */
+}
+
+.section h2 {
+    font-size: 1.1em;
+    margin: 0;
+    padding: 5px;
+    color: #700005;
+}
+
+.section:hover {
+    transform: scale(1.05);
 }
 
 
+.nav-links .contact-btn {
+    color: #ffffff;
+}
+
+/* Empêche le lien d'affecter le style du texte */
+a.logo-link {
+    text-decoration: none; /* Supprime le soulignement du lien */
+    color: inherit;        /* Garde la couleur du texte héritée (pareil que le reste du texte) */
+}
+
+/* Style pour le logo */
+.logo {
+    font-size: 2.5rem;
+    font-weight: bold;
+    /* Ajoute d'autres styles pour le logo si nécessaire */
+}
+
+
+/* Supprime le surlignage des liens */
+a:focus, a:active {
+    outline: none;  /* Enlève la bordure autour du lien lorsqu'il est cliqué */
+    text-decoration: none;  /* Enlève toute décoration de texte (soulignement) */
+}
+
+
+/* Supprimer le surlignage des liens dans les sections */
+.sections a {
+    text-decoration: none; /* Supprime le soulignement */
+    color: inherit; /* Laisse la couleur du texte héritée */
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+/* Style pour le message discret */
+.scrolling-message {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    background-color: transparent; /* Fond transparent */
+    color: #000; /* Texte noir ou une autre couleur de ton choix */
+    font-size: 1.2em;
+    font-weight: bold;
+    opacity: 0; /* Initialement invisible */
+    animation: showMessage 65s infinite; /* L'animation dure 65 secondes, et se répète indéfiniment */
+}
 

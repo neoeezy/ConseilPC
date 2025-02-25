@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ConseilPC - Contact</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">Conseil PC</h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="./index.html">Accueil</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Formulaire de contact -->
+    <section class="contact-section">
+        
+        <form action="mailto:adiltlb@outlook.com" method="POST" enctype="multipart/form-data">
+            <label for="name">Nom :</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message :</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <button type="submit">Envoyer</button>
+        </form>
+    </section>
+
+    <script>
+        document.querySelectorAll('.zoom-image').forEach(img => {
+            img.addEventListener('mouseover', () => {
+                img.style.transform = 'scale(1.1)';
+                img.style.transition = 'transform 0.3s ease';
+            });
+            img.addEventListener('mouseout', () => {
+                img.style.transform = 'scale(1)';
+            });
+        });
+    </script>
+</body>
+</html>
